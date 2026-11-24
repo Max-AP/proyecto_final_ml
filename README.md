@@ -5,7 +5,7 @@
 > relevant layer instead of the full chat history. Compares TF-IDF + logistic regression against multilingual
 > sentence embeddings (`paraphrase-multilingual-MiniLM-L12-v2`) + logistic regression in scikit-learn pipelines
 > with 10-fold CV. On a small synthetic, balanced Spanish dataset (150 samples), embeddings reached 0.97 test
-> accuracy vs 0.87 for TF-IDF (paired t-test p ≈ 0.002). A pilot result; the thesis evaluates on real data.
+> accuracy vs 0.87 for TF-IDF (paired t-test p ≈ 0.002). A pilot result, not a benchmark on real conversations.
 > **Stack:** Python, scikit-learn, sentence-transformers, t-SNE, SciPy. The rest of this README is in Spanish.
 
 
