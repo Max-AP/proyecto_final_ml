@@ -1,5 +1,14 @@
 # 🧠 Clasificador de Memoria Jerárquica para Agentes de IA
 
+> **English summary.** Pilot for my MSc thesis: a text classifier that routes each user message to one of
+> three memory layers of an AI agent (working, episodic or semantic memory), so the agent retrieves only the
+> relevant layer instead of the full chat history. Compares TF-IDF + logistic regression against multilingual
+> sentence embeddings (`paraphrase-multilingual-MiniLM-L12-v2`) + logistic regression in scikit-learn pipelines
+> with 10-fold CV. On a small synthetic, balanced Spanish dataset (150 samples), embeddings reached 0.97 test
+> accuracy vs 0.87 for TF-IDF (paired t-test p ≈ 0.002). A pilot result; the thesis evaluates on real data.
+> **Stack:** Python, scikit-learn, sentence-transformers, t-SNE, SciPy. The rest of this README is in Spanish.
+
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-Pipeline-orange)
 ![Transformers](https://img.shields.io/badge/SentenceTransformers-Multilingual-green)
